@@ -1,4 +1,5 @@
-package ml.arunreddy.sentimentannotator.db;
+package ml.arunreddy.datasets.tudiabetes;
+
 
 /**
  * Created by arun on 6/3/15.
