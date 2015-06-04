@@ -8,10 +8,10 @@ import java.util.List;
  */
 public class DummyData {
 
-  public List<Sentiment> getDummyData(){
+  public static List<Sentiment> getDummyData(){
     List<Sentiment> sentimentList = new ArrayList<Sentiment>();
 
-    Sentiment sentiment = new Sentiment("Text 01");
+    Sentiment sentiment = new Sentiment("Text 00");
     sentimentList.add(sentiment);
 
     sentiment = new Sentiment("Text 01");

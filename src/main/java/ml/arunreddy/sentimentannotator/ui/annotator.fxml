@@ -9,27 +9,27 @@
    <bottom>
       <HBox prefHeight="95.0" prefWidth="580.0" BorderPane.alignment="CENTER">
          <children>
-            <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="84.0" text="&lt; Back">
+            <Button mnemonicParsing="false" onAction="#handleBackButtonAction" prefHeight="37.0" prefWidth="84.0" text="&lt; Back">
                <HBox.margin>
                   <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
                </HBox.margin>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="89.0" text="NEG (1)" textFill="RED" onAction="#handleNegativeButtonAction">
+            <Button mnemonicParsing="false" onAction="#handleNegativeButtonAction" prefHeight="37.0" prefWidth="89.0" text="NEG (1)" textFill="RED">
                <HBox.margin>
                   <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
                </HBox.margin>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="35.0" prefWidth="81.0" text="NEU (2)"  onAction="#handleNeutralButtonAction">
+            <Button mnemonicParsing="false" onAction="#handleNeutralButtonAction" prefHeight="35.0" prefWidth="81.0" text="NEU (2)">
                <HBox.margin>
                   <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
                </HBox.margin>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="36.0" prefWidth="82.0" text="POS (3)" textFill="#00a410"  onAction="#handlePositiveButtonAction">
+            <Button mnemonicParsing="false" onAction="#handlePositiveButtonAction" prefHeight="36.0" prefWidth="82.0" text="POS (3)" textFill="#00a410">
                <HBox.margin>
                   <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
                </HBox.margin>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="36.0" prefWidth="84.0" text="Next &gt;">
+            <Button mnemonicParsing="false" onAction="#handleNextButtonAction" prefHeight="36.0" prefWidth="84.0" text="Next &gt;">
                <HBox.margin>
                   <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
                </HBox.margin>
@@ -52,7 +52,9 @@
                      <children>
                         <Pane prefHeight="239.0" prefWidth="600.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
                            <children>
-                              <TextArea prefHeight="167.0" prefWidth="550.0" fx:id="sentimentTextArea"/>
+                              <TextArea fx:id="sentimentTextArea" prefHeight="167.0" prefWidth="550.0" />
+                              <Label fx:id="indexLabel" layoutX="-5.0" layoutY="167.0" text="Index: 0:" />
+                              <Label fx:id="sentimentLabel" layoutX="446.0" layoutY="167.0" prefHeight="16.0" prefWidth="96.0" text="Label" textAlignment="RIGHT" />
                            </children>
                            <padding>
                               <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />

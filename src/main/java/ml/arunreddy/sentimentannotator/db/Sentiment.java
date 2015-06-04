@@ -7,7 +7,7 @@ public class Sentiment {
 
   private String text;
 
-  private int label;
+  private int label=-10;
 
   private String user;
 
