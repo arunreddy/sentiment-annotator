@@ -20,14 +20,16 @@ public class AnnotatorUI extends  Application {
   @Override
   public void start(Stage primaryStage) throws Exception {
 
-    File file = new File("annotator.fxml");
+    File file = new File("/home/arun/code/phd/sentiment-annotator-gui/src/main/java/ml/arunreddy/sentimentannotator/ui/annotator.fxml");
     Parent root = FXMLLoader.load(file.toURL());
 
     Scene scene = new Scene(root, 600, 600);
+   
 
     primaryStage.setTitle("Sentiment Annotator v0.1");
     primaryStage.setScene(scene);
     primaryStage.show();
+    scene.getRoot().requestFocus();
   }
 
 

@@ -5,9 +5,9 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="592.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ml.arunreddy.sentimentannotator.ui.AnnotatorController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="592.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ml.arunreddy.sentimentannotator.ui.AnnotatorController" onKeyPressed="#keyPressedEvent" >
    <bottom>
-      <HBox prefHeight="92.0" prefWidth="580.0" BorderPane.alignment="CENTER">
+      <HBox prefHeight="56.0" prefWidth="580.0" BorderPane.alignment="CENTER">
          <children>
             <Button mnemonicParsing="false" onAction="#handleBackButtonAction" prefHeight="37.0" prefWidth="84.0" text="&lt; Back">
                <HBox.margin>
@@ -59,7 +59,10 @@
                            </padding>
                         </Pane>
                         <Label fx:id="sentimentLabel" layoutX="496.0" layoutY="377.0" prefHeight="16.0" prefWidth="96.0" text="Label" textAlignment="RIGHT" />
-                        <Label fx:id="indexLabel" layoutX="16.0" layoutY="375.0" text="Index: 0:" />
+                        <Label fx:id="indexLabel" layoutX="26.0" layoutY="377.0" text="Index: 0:" />
+                        <Label layoutX="202.0" layoutY="377.0" text="Jump To:" />
+                        <TextField fx:id="jumpIndexTextField" layoutX="269.0" layoutY="370.0" prefHeight="26.0" prefWidth="62.0" />
+                        <Button layoutX="344.0" layoutY="370.0" mnemonicParsing="false" onAction="#handleGoButtonAction" text="GO" />
                      </children>
                      <padding>
                         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
