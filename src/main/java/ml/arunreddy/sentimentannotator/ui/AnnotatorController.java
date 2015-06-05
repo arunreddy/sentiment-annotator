@@ -101,14 +101,19 @@ public class AnnotatorController implements Initializable{
       switch(event.getCode()){
           case A:
               this.handleNegativeButtonAction(null);
+              break;
           case S:
               this.handleNeutralButtonAction(null);
+              break;
           case D:
-              this.handleNextButtonAction(null);
+              this.handlePositiveButtonAction(null);
+             break;
           case LEFT:
              this.handleBackButtonAction(null);
+             break;
           case RIGHT:
              this.handleNextButtonAction(null);
+             break;
           default:
               //Do Nothing.
       }
@@ -141,7 +146,7 @@ public class AnnotatorController implements Initializable{
   
   @Override
   public void initialize(URL location, ResourceBundle resources) {
-    Db db = Ohm.db("diabetes-sisters.db");
+    Db db = Ohm.db("tu-diabetes.db");
     sentimentTable = db.table(Sentiment.class);
 
     update();
